@@ -6,9 +6,14 @@ Date: June 27th 2024
 
 Instructor: Zahra Noviana, Rida Tiffarent, Herjuno Ari Nugroho, Riki Ruhimat, Fajar Nasrulloh, Rini Riffiani, Panji Cahya Mawarda (Tim Ad-hoc Genom Mikroba - PRMT BRIN)
 
-Participant: Staff of RC Applied Microbiology BRIN
+Participant: Staff of Research Center for Applied Microbiology BRIN
 
-## Test 1
+# Outline
+1. A
+2. B
+3. C
+4. D
+
 
 ### Test 2
 
