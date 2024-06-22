@@ -10,7 +10,7 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
 
 ## Outline
 ### Part 1 - Navigating the Command Line
-1. Installation of required tool/software:
+1. Installation of required tool/software: \
    a. Window Subsystem for Linux (Window user only)
    
    b. Ubuntu
