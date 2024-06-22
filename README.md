@@ -9,17 +9,23 @@ Instructor: Zahra Noviana, Rida Tiffarent, Herjuno Ari Nugroho, Riki Ruhimat, Fa
 Participant: Staff of Research Center for Applied Microbiology BRIN
 
 ## Outline
-# Part 1
-1. Installation of Window Subsystem for Linux (Window user only)
-2. Ubuntu installation
-3. Miniconda3 installation
-4. Seqkit installation
-5. NanoPlot Installation
-6. 
-7. Quality check for long-read sequences (Oxford Nanopore Technologies)
-8. Quality check for short-read sequences (Illumina)
-9. D
+### Part 1 - Navigating the Command Line
+1. Installation of required tool/software:
+   a. Window Subsystem for Linux (Window user only)
+   b. Ubuntu
+   c. Miniconda3
+2. Getting Familiar with the Command Line
 
+### Part 2 - Quality check of sequences
+1. Installation of required tools
+   a. Fastp
+   b. Nanoplot
+2. Quality check for short-read sequences (Illumina)
+3. Quality check for long-read sequences (Oxford Nanopore Technologies)
 
-### Test 2
+### Part 3 - Assembly and annotation
+1. Installation of required tools
+   a. Bactopia
+2. Assembly and annotation using bactopia
+
 
