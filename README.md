@@ -12,16 +12,19 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
 ### Part 1 - Navigating the Command Line
 1. Installation of required tool/software:
    a. Window Subsystem for Linux (Window user only)
+   
    b. Ubuntu
+   
    c. Miniconda3
-2. Getting Familiar with the Command Line
+3. Getting Familiar with the Command Line
 
 ### Part 2 - Quality check of sequences
 1. Installation of required tools
    a. Fastp
+   
    b. Nanoplot
-2. Quality check for short-read sequences (Illumina)
-3. Quality check for long-read sequences (Oxford Nanopore Technologies)
+3. Quality check for short-read sequences (Illumina)
+4. Quality check for long-read sequences (Oxford Nanopore Technologies)
 
 ### Part 3 - Assembly and annotation
 1. Installation of required tools
