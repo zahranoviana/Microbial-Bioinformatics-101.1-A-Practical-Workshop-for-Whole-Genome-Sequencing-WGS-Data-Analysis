@@ -17,14 +17,14 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
 3. Getting Familiar with the Command Line
 
 ### Part 2 - Quality check of sequences
-1. Installation of required tools \
+1. Installation of required tools: \
    a. Fastp \
    b. Nanoplot
 3. Quality check for short-read sequences (Illumina)
 4. Quality check for long-read sequences (Oxford Nanopore Technologies)
 
 ### Part 3 - Assembly and annotation
-1. Installation of required tools \  
+1. Installation of required tools: \  
    a. Bactopia
 2. Assembly and annotation using bactopia
 
