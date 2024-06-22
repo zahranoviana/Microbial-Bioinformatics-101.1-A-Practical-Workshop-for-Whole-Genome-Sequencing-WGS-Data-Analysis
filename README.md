@@ -1,27 +1,21 @@
 # Microbial Bioinformatics 101: A Practical Workshop for Whole Genome Sequencing (WGS) Data Analysis
 
-Microbial bioinformatics merges advanced computing with microbiology, decoding genetic and functional traits of microorganisms. This workshop equips BRIN staff to leverage sequencing and analysis tools for deeper insights into microbial interactions and applications in research.
-
-Session 1: June 27th 2024
-
-Instructor: Zahra Noviana, Rida Tiffarent, Herjuno Ari Nugroho, Riki Ruhimat, Fajar Nasrulloh, Rini Riffiani, Panji Cahya Mawarda (Tim Ad-hoc Genom Mikroba - PRMT BRIN)
-
+Microbial bioinformatics merges advanced computing with microbiology, decoding genetic and functional traits of microorganisms. This workshop equips BRIN staff to leverage sequencing and analysis tools for deeper insights into microbial interactions and applications in research.  \
+Session 1: June 27th 2024  \
+Instructor: Zahra Noviana, Rida Tiffarent, Herjuno Ari Nugroho, Riki Ruhimat, Fajar Nasrulloh, Rini Riffiani, Panji Cahya Mawarda (Tim Ad-hoc Genom Mikroba - PRMT BRIN)  \
 Participant: Staff of Research Center for Applied Microbiology BRIN
 
 ## Outline
 ### Part 1 - Navigating the Command Line
 1. Installation of required tool/software: \
-   a. Window Subsystem for Linux (Window user only)
-   
-   b. Ubuntu
-   
+   a. Window Subsystem for Linux (Window user only) \   
+   b. Ubuntu \
    c. Miniconda3
 3. Getting Familiar with the Command Line
 
 ### Part 2 - Quality check of sequences
 1. Installation of required tools
-   a. Fastp
-   
+   a. Fastp \
    b. Nanoplot
 3. Quality check for short-read sequences (Illumina)
 4. Quality check for long-read sequences (Oxford Nanopore Technologies)
