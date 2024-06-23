@@ -29,10 +29,10 @@ __________________________
 ## Let's get things started
 
 ### Let's delve into part 1
-1. Installation of Window Subsystem for Linux (WSL) for Window User \
+### 1. Installation of Window Subsystem for Linux (WSL) for Window User 
    Requirement: Windows 10 or 11 
    
-   #### a. Open PowerShell as an Administrator \
+   #### a. Open PowerShell as an Administrator 
    #### b. Install Window Subsystem for Linux (WSL)
 
       ```
@@ -53,9 +53,9 @@ __________________________
       ## This is to verify the installed wsl version
       wsl --list --verbose
       ```
-    
-   #### d. Install WSL command line interface
-
+      
+### 2. Installation of WSL command line interface (Ubuntu)
+   
       See what's available
       ```
       ## This is to verify the available wsl interfaces
@@ -69,7 +69,8 @@ __________________________
       ```
       *Give suitable username & password
 
-   #### e. Install Miniconda
+### 3. Installation of Miniconda3
+   
       Open Ubuntu
    
       Download Miniconda installer
@@ -99,7 +100,7 @@ __________________________
       
    
    
-3. Ins
+4. Ins
 
 
 
