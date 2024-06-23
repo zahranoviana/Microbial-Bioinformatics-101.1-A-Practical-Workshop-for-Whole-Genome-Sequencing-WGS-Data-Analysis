@@ -56,11 +56,11 @@ __________________________
       
 ### 2. Installation of WSL command line interface (Ubuntu)
    
-      See what's available
-      ```
-      ## This is to verify the available wsl interfaces
-      wsl --list --online
-      ```
+   See what's available
+   ```
+   ## This is to verify the available wsl interfaces
+   wsl --list --online
+   ```
    
       Install Ubuntu-20.04
       ```
