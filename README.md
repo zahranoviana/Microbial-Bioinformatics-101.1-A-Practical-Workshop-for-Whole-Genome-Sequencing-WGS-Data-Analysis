@@ -35,10 +35,10 @@ __________________________
    #### a. Open PowerShell as an Administrator 
    #### b. Install Window Subsystem for Linux (WSL)
 
-      ```
-      ## This is to install wsl
-      wsl --install
-      ```
+   ```
+   ## This is to install wsl
+   wsl --install
+   ```
    
       ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/3fa13b2f-1c4f-4122-8b08-65c235558a1e)
 
