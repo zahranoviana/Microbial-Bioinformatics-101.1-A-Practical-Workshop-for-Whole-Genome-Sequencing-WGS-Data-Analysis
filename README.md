@@ -16,10 +16,9 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
 4. Getting Familiar with the Command Line
 
 ### Part 2 - Quality check of sequences
-1. Installation of nanoplot
+1. Installation of nanoplot and fastqc
 2. Quality check for long-read sequences (Oxford Nanopore Technologies)
-3. Installation of fastqc
-4. Quality check for short-read sequences (Illumina)
+3. Quality check for short-read sequences (Illumina)
 
 ### Part 3 - Assembly and annotation
 1. Assembly and annotation for long-read sequences (Oxford Nanopore Technologies)
@@ -137,11 +136,50 @@ __________________________
    quit using q or Esc        
    
    
-## Take a break
 __________________________
 
 ## Here we go Part 2
 
+### 1. Installation of nanoplot and fastqc via conda 
+   
+   
+   #### a. Create conda environment called qc_check
+   ```
+   ## This is to creat env called qc_check
+   conda create --name qc_check
+   ```   
+
+   #### b. Activate qc_check environment
+   ```
+   ## This is to activate the qc_Check
+   conda activate qc_check
+   ```
+  
+   #### c. Install nanoplot via conda
+   Install nanoplot
+   ```
+   ## This is to install nanoplot
+   conda install bioconda::nanoplot
+   ```
+
+   Check if nanoplot is succesfully installed
+   ```
+   ## This is to check the installation
+   which NanoPlot
+   ```
+      
+   #### d. Install fastp via conda
+   Install fastp
+   ```
+   ## This is to install fastp
+   conda install -c bioconda fastp
+   ```
+
+   Check if fastp is succesfully installed
+   ```
+   ## This is to check the installation
+   which fastp
+   ```
 
 
 
