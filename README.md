@@ -91,13 +91,50 @@ __________________________
       conda list
       ```
 
+### 4. Getting familiar with the command line
 
-
-      
-
-
+      Check your working directory
    
-      
+      ```
+      ## This is to get the path to your working directory
+      pwd
+      ```
+
+      Create a new folder called bioinformatics_101
+   
+      ```
+      ## This is to make a new folder called bioinformatics_101
+      mkdir bioinformatics_101
+      ```
+
+      Check if bioinformatics_101 folder is succesfully created
+   
+      ```
+      ## This is to list information about files and folders
+      ls
+      ```
+
+      Change working directories to bioinformatics_101
+   
+      ```
+      ## This is to enter folder bioinformatics_101
+      cd bioinformatics_101/
+      ```
+
+      Try to create a file
+   
+      ```
+      ## This is to create a file called notes.txt
+      touch notes.txt
+      ```      
+
+      Edit the file
+
+      ```
+      ## This is to edit the file called notes.txt
+      vim called notes.txt
+      ```   
+      quit using q or Esc         
    
    
 4. Ins
