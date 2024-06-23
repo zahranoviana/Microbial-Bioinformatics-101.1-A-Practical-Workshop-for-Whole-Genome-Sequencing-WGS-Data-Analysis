@@ -48,16 +48,12 @@ __________________________
       ### This is to verify if the wsl is installed
       wsl --help
       ```
-      ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/782da440-6195-41e3-9111-f5134bc50497)
-
       or
       ```
       ### This is to verify the installed wsl version
       wsl --list --verbose
       ```
-      ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/6cb1b0a5-2419-4861-86f0-2d022a28ff68)
-
-
+    
    d. Install WSL command line interface
 
       See what's available
@@ -66,7 +62,34 @@ __________________________
       wsl --list --online
       ```
 
-      ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/50d9d75c-1217-4d2e-9121-159f529b3729)
+      Install Ubuntu-20.04
+      ```
+      ### This is to install Ubuntu-20.04
+      wsl --install -d Ubuntu-20.04
+      ```
+      *Give suitable username & password
+
+   e. Install Miniconda
+      Open Ubuntu
+
+      Download Miniconda installer
+      ```
+      ### This is to download Miniconda installer
+      wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /opt/miniconda-installer.sh
+      ```
+
+      Execute installation
+      ```
+      ### This is to install Miniconda
+      bash /opt/miniconda-installer.sh
+      ```
+
+      Test if it is installed correctly
+      ```
+      ### This is to test the installation
+      conda list
+      ```
+
 
 
       
