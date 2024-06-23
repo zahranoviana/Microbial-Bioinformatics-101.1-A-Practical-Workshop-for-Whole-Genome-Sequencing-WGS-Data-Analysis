@@ -33,7 +33,7 @@ __________________________
    Requirement: Windows 10 or 11 
    
    a. Open PowerShell as an Administrator \
-   b. Install WSL
+   b. Install Window Subsystem for Linux (WSL)
    
       ```
       ### This is to install wsl
@@ -48,13 +48,28 @@ __________________________
       ### This is to verify if the wsl is installed
       wsl --help
       ```
+      ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/782da440-6195-41e3-9111-f5134bc50497)
+
       or
       ```
-      ### This is to verify the installed WSL version
+      ### This is to verify the installed wsl version
       wsl --list --verbose
       ```
+      ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/6cb1b0a5-2419-4861-86f0-2d022a28ff68)
 
-   d
+
+   d. Install WSL command line interface
+
+      See what's available
+      ```
+      ### This is to verify the available wsl interfaces
+      wsl --list --online
+      ```
+
+      ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/50d9d75c-1217-4d2e-9121-159f529b3729)
+
+
+      
 
 
    
