@@ -36,11 +36,16 @@ __________________________
    Requirement: Windows 10 or 11 
    
    a. Open PowerShell as an Administrator \
-   b. Install WSL \\
-      ``` wsl --install ```
+   b. Install WSL
    
-   ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/d7cf24e3-b9ab-41b8-9dae-ab63e6bd375a)
+      ``` #This is to install wsl
+          wsl --install ```
 
+      ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/d153c713-d6a7-4799-899b-23089ee99767)
+
+
+   
+      
    
    
 3. Ins
