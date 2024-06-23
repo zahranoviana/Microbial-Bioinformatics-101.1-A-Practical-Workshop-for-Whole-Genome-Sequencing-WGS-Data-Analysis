@@ -35,60 +35,60 @@ __________________________
    a. Open PowerShell as an Administrator \
    b. Install Window Subsystem for Linux (WSL)
    
-      ```
-      ### This is to install wsl
-      wsl --install
-      ```
-
-      ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/3fa13b2f-1c4f-4122-8b08-65c235558a1e)
+         ```
+         ### This is to install wsl
+         wsl --install
+         ```
+   
+         ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/3fa13b2f-1c4f-4122-8b08-65c235558a1e)
 
 
    c. Check if wsl is succesfully installed
-      ```
-      ### This is to verify if the wsl is installed
-      wsl --help
-      ```
-      or
-      ```
-      ### This is to verify the installed wsl version
-      wsl --list --verbose
-      ```
+         ```
+         ### This is to verify if the wsl is installed
+         wsl --help
+         ```
+         or
+         ```
+         ### This is to verify the installed wsl version
+         wsl --list --verbose
+         ```
     
    d. Install WSL command line interface
 
-      See what's available
-      ```
-      ### This is to verify the available wsl interfaces
-      wsl --list --online
-      ```
-
-      Install Ubuntu-20.04
-      ```
-      ### This is to install Ubuntu-20.04
-      wsl --install -d Ubuntu-20.04
-      ```
-      *Give suitable username & password
+         See what's available
+         ```
+         ### This is to verify the available wsl interfaces
+         wsl --list --online
+         ```
+   
+         Install Ubuntu-20.04
+         ```
+         ### This is to install Ubuntu-20.04
+         wsl --install -d Ubuntu-20.04
+         ```
+         *Give suitable username & password
 
    e. Install Miniconda
-      Open Ubuntu
-
-      Download Miniconda installer
-      ```
-      ### This is to download Miniconda installer
-      wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /opt/miniconda-installer.sh
-      ```
-
-      Execute installation
-      ```
-      ### This is to install Miniconda
-      bash /opt/miniconda-installer.sh
-      ```
-
-      Test if it is installed correctly
-      ```
-      ### This is to test the installation
-      conda list
-      ```
+         Open Ubuntu
+   
+         Download Miniconda installer
+         ```
+         ### This is to download Miniconda installer
+         wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /opt/miniconda-installer.sh
+         ```
+   
+         Execute installation
+         ```
+         ### This is to install Miniconda
+         bash /opt/miniconda-installer.sh
+         ```
+   
+         Test if it is installed correctly
+         ```
+         ### This is to test the installation
+         conda list
+         ```
 
 
 
