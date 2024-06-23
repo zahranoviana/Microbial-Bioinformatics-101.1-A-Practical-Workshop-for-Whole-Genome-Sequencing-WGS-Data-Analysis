@@ -10,9 +10,9 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
 
 ## Outline
 ### Part 1 - Navigating the Command Line
-1. Installation of Window Subsystem for Linux (Window user only) \
-2. Installation of Ubuntu \
-3. Installation of Miniconda3 \
+1. Installation of Window Subsystem for Linux (Window user only) 
+2. Installation of Ubuntu 
+3. Installation of Miniconda3 
 4. Getting Familiar with the Command Line
 
 ### Part 2 - Quality check of sequences
