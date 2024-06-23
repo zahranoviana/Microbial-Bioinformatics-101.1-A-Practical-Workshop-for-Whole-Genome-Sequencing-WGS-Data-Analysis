@@ -62,79 +62,79 @@ __________________________
    wsl --list --online
    ```
    
-      Install Ubuntu-20.04
-      ```
-      ## This is to install Ubuntu-20.04
-      wsl --install -d Ubuntu-20.04
-      ```
-      *Give suitable username & password
+   Install Ubuntu-20.04
+   ```
+   ## This is to install Ubuntu-20.04
+   wsl --install -d Ubuntu-20.04
+   ```
+   *Give suitable username & password
 
 ### 3. Installation of Miniconda3
    
-      Open Ubuntu
+   Open Ubuntu
    
-      Download Miniconda installer
-      ```
-      ## This is to download Miniconda installer
-      wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /opt/miniconda-installer.sh
-      ```
+   Download Miniconda installer
+   ```
+   ## This is to download Miniconda installer
+   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /opt/miniconda-installer.sh
+   ```
    
-      Execute installation
-      ```
-      ## This is to install Miniconda
-      bash /opt/miniconda-installer.sh
-      ```
+   Execute installation
+   ```
+   ## This is to install Miniconda
+   bash /opt/miniconda-installer.sh
+   ```
    
-      Test if it is installed correctly
-      ```
-      ## This is to test the installation
-      conda list
-      ```
+   Test if it is installed correctly
+   ```
+   ## This is to test the installation
+   conda list
+   ```
 
 ### 4. Getting familiar with the command line
 
-      Check your working directory
+   Check your working directory
    
-      ```
-      ## This is to get the path to your working directory
-      pwd
-      ```
+   ```
+   ## This is to get the path to your working directory
+   pwd
+   ```
 
-      Create a new folder called bioinformatics_101
+   Create a new folder called bioinformatics_101
    
-      ```
-      ## This is to make a new folder called bioinformatics_101
-      mkdir bioinformatics_101
-      ```
+   ```
+   ## This is to make a new folder called bioinformatics_101
+   mkdir bioinformatics_101
+   ```
 
-      Check if bioinformatics_101 folder is succesfully created
+   Check if bioinformatics_101 folder is succesfully created
    
-      ```
-      ## This is to list information about files and folders
-      ls
-      ```
+   ```
+   ## This is to list information about files and folders
+   ls
+   ```
 
-      Change working directories to bioinformatics_101
+   Change working directories to bioinformatics_101
    
-      ```
-      ## This is to enter folder bioinformatics_101
-      cd bioinformatics_101/
-      ```
+   ```
+   ## This is to enter folder bioinformatics_101
+   cd bioinformatics_101/
+   ```
 
-      Try to create a file
+   Try to create a file
    
-      ```
-      ## This is to create a file called notes.txt
-      touch notes.txt
-      ```      
+   ```
+   ## This is to create a file called notes.txt
+   touch notes.txt
+   ```      
 
-      Edit the file
+   Edit the file
 
-      ```
-      ## This is to edit the file called notes.txt
-      vim called notes.txt
-      ```   
-      quit using q or Esc         
+   ```
+   ## This is to edit the file called notes.txt
+   vim called notes.txt
+   ```   
+   quit using q or Esc         
    
    
 4. Ins
