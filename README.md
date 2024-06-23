@@ -134,10 +134,14 @@ __________________________
    ## This is to edit the file called notes.txt
    vim called notes.txt
    ```   
-   quit using q or Esc         
+   quit using q or Esc        
    
    
-4. Ins
+## Take a break
+__________________________
+
+## Here we go Part 2
+
 
 
 
