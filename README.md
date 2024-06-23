@@ -28,4 +28,8 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
    a. Bactopia
 2. Assembly and annotation using bactopia
 
+__________________________
+# Let's get things started
+
+
 
