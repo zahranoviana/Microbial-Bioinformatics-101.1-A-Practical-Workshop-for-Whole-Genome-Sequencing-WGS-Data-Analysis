@@ -29,7 +29,19 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
 2. Assembly and annotation using bactopia
 
 __________________________
-# Let's get things started
+## Let's get things started
+
+### Delve into part 1
+1. Installation of Window Subsystem for Linux (WSLfor Window User \
+   Requirement: Windows 10 or 11 \
+   a. Open PowerShell as an Administrator
+   b. Install WSL
+      ``` wsl --install ```
+   ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/d7cf24e3-b9ab-41b8-9dae-ab63e6bd375a)
+
+   
+   
+3. Ins
 
 
 
