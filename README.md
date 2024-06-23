@@ -39,8 +39,8 @@ __________________________
    b. Install WSL
    
       ```
-      #This is to install wsl
-          wsl --install
+      # This is to install wsl
+      wsl --install
       ```
 
       ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/d153c713-d6a7-4799-899b-23089ee99767)
