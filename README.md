@@ -31,15 +31,17 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
 __________________________
 ## Let's get things started
 
-### Delve into part 1
+### Let's delve into part 1
 1. Installation of Window Subsystem for Linux (WSL) for Window User \
    Requirement: Windows 10 or 11 
    
    a. Open PowerShell as an Administrator \
    b. Install WSL
    
-      ``` #This is to install wsl
-          wsl --install ```
+      ```
+      #This is to install wsl
+          wsl --install
+      ```
 
       ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/d153c713-d6a7-4799-899b-23089ee99767)
 
