@@ -16,16 +16,14 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
 4. Getting Familiar with the Command Line
 
 ### Part 2 - Quality check of sequences
-1. Installation of required tools: \
-   a. Fastp \
-   b. Nanoplot
-3. Quality check for short-read sequences (Illumina)
-4. Quality check for long-read sequences (Oxford Nanopore Technologies)
+1. Installation of nanoplot
+2. Quality check for long-read sequences (Oxford Nanopore Technologies)
+3. Installation of fastqc
+4. Quality check for short-read sequences (Illumina)
 
 ### Part 3 - Assembly and annotation
-1. Installation of required tools: \
-   a. Bactopia
-2. Assembly and annotation using bactopia
+1. Assembly and annotation for long-read sequences (Oxford Nanopore Technologies)
+2. Assembly and annotation for short-read sequences (Illumina)
 
 __________________________
 ## Let's get things started
@@ -42,7 +40,8 @@ __________________________
       wsl --install
       ```
 
-      ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/d153c713-d6a7-4799-899b-23089ee99767)
+      ![image](https://github.com/zahranoviana/Microbial-Bioinformatics-101.1-A-Practical-Workshop-for-Whole-Genome-Sequencing-WGS-Data-Analysis/assets/97138684/6b360e31-f289-471e-88f9-062769af4926)
+
 
 
    
