@@ -22,8 +22,7 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
 
 ### Part 3 - Assembly and annotation
 1. Assembly and annotation for long-read sequences (Oxford Nanopore Technologies)
-2. Assembly and annotation for short-read sequences (Illumina)
-
+2. Data visualization
 __________________________
 ## Let's get things started
 
@@ -167,19 +166,142 @@ __________________________
    ## This is to check the installation
    which NanoPlot
    ```
-      
-   #### d. Install fastp via conda
-   Install fastp
+
+   #### d. Check quality of long-read sequences using 
+   Get the data
+   Sources:
+   https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/tree/main
+   https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
+
    ```
-   ## This is to install fastp
-   conda install -c bioconda fastp
+   ## This is to create and enter a folder
+   mkdir ONT
+   cd ONT/   
+   ```
+
+   ```
+   ## This is to get the data
+   wget https://zenodo.org/record/940733/files/minion_2d.fq
+   
+   ```
+
+   Run NanoPlot
+   ```
+   ## This is to run NanoPlot
+   NanoPlot --fastq minion_2d.fq -o NanoPlot
+   ```
+   *check the result
+   
+   Go back to the main folder
+   ```
+   ## This is to go back to previous folder
+   cd ..
+   ```
+   
+   #### e. Install fastqc via conda
+   Install fastqc
+   ```
+   ## This is to install fastqc
+   conda install -c bioconda fastqc
    ```
 
    Check if fastp is succesfully installed
    ```
    ## This is to check the installation
-   which fastp
+   which fastqc
    ```
 
+   #### d. Check quality of short-read sequences using fastqc
+   Get the data
+   Sources:
+   https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/tree/main
+   https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
+
+   ```
+   ## This is to create and enter a folder
+   mkdir illumina
+   cd illumina/   
+   ```
+
+   ```
+   ## This is to get the data
+   wget https://zenodo.org/record/940733/files/illumina_f.fq 
+   wget https://zenodo.org/record/940733/files/illumina_r.fq 
+   ```
+
+   Run fastqc
+   ```
+   ## This is to run fastqc
+   fastqc illumina_f.fq illumina_r.fq -o fastqc
+   ```
+   *check the result
+
+   Go back to the main folder
+   ```
+   ## This is to go back to previous folder
+   cd ..
+   ```
+
+   Deactivate the environment
+   ```
+   ## This is to deactivate qc_check
+   conda deactivate qc_check
+   ```
+
+__________________________
+
+## Entering the 3rd Part
+
+### 1. Assembly and annotation for long-read sequences (Oxford Nanopore Technologies) using Unicycler
+   
+   #### a. Create conda environment called assembly
+   ```
+   ## This is to creat env called assembly
+   conda create --name assembly
+   ```   
+
+   #### b. Activate assembly environment
+   ```
+   ## This is to activate the assembly
+   conda activate assembly
+   ```
+
+   #### c. Install the tools for assembly, annotation, and qc
+   ```
+   ## This is to activate the assembly
+   conda install -c bioconda unicycler=0.4.7 prokka=1.14.6 quast=5.0.2
+   ```
+
+   #### d. Run the assembly
+   ```
+   ## Go to ONT folder
+   cd ONT/   
+   ```
+   
+   ```
+   ## This is to run assembly using unicycler
+   unicycler -l minion_2d.fq -o assembly
+   ```
+
+   #### e. Check the assembly result using quast
+   ```
+   ## This is to run quast
+   quast assembly/ -o quast
+   ```
+   *check the result
+
+   #### f. Do annotation using prokka
+   ```
+   ## This is to run prokka
+   prokka assembly/xxxxxx.fa -o prokka
+   ```
+   *check the result
+
+
+### 2. Data visualization
+Go to https://proksee.ca/ and upload assembly and anotation files for genome visualization
+
+
+### Finish line
 
 
