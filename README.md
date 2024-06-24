@@ -168,9 +168,9 @@ __________________________
    ```
 
    #### d. Check quality of long-read sequences using 
-   Get the data
-   Sources:
-   https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/tree/main
+   Get the data \
+   Sources: \
+   https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/tree/main \
    https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
 
    ```
@@ -205,16 +205,16 @@ __________________________
    conda install -c bioconda fastqc
    ```
 
-   Check if fastp is succesfully installed
+   Check if fastqc is succesfully installed
    ```
    ## This is to check the installation
    which fastqc
    ```
 
    #### d. Check quality of short-read sequences using fastqc
-   Get the data
-   Sources:
-   https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/tree/main
+   Get the data \
+   Sources: \
+   https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/tree/main \
    https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
 
    ```
@@ -235,6 +235,7 @@ __________________________
    fastqc illumina_f.fq illumina_r.fq -o fastqc
    ```
    *check the result
+   
 
    Go back to the main folder
    ```
@@ -289,6 +290,7 @@ __________________________
    quast assembly/ -o quast
    ```
    *check the result
+   
 
    #### f. Do annotation using prokka
    ```
@@ -296,12 +298,15 @@ __________________________
    prokka assembly/xxxxxx.fa -o prokka
    ```
    *check the result
+   
 
 
 ### 2. Data visualization
 Go to https://proksee.ca/ and upload assembly and anotation files for genome visualization
 
 
+
+__________________________________________________________
 ### Finish line
 
 
