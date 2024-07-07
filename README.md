@@ -9,19 +9,19 @@ Instructor: Zahra Noviana, Rida Tiffarent, Herjuno Ari Nugroho, Riki Ruhimat, Fa
 Participant: Staff of Research Center for Applied Microbiology BRIN
 
 ## Outline
-### Part 1 - Navigating the Command Line
+### Part I - Navigating the Command Line
 1. Installation of Window Subsystem for Linux (Window user only) 
 2. Installation of Ubuntu 
 3. Installation of Miniconda3 
 4. Getting Familiar with the Command Line
 
-### Part 2 - Quality check of sequences
+### Part II - Quality check of sequences
 1. Installation of nanoplot and fastqc
 2. Quality check for long-read sequences (Oxford Nanopore Technologies)
 3. Quality check for short-read sequences (Illumina)
 
-### Part 3 - Assembly of illumina short-read sequences using Unicycler
-1. Assembly and annotation for long-read sequences (Oxford Nanopore Technologies)
+### Part III - Assembly, annotation and data visualization
+1. Assembly of illumina reads using unicycler
 2. Checking the assembly result using quast
 3. Annotation using prokka
 4. Visualization using IGV
@@ -29,7 +29,7 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
 __________________________
 ## Let's get things started
 
-### Let's delve into part 1
+### Let's delve into part I
 ### 1. Installation of Window Subsystem for Linux (WSL) for Window User 
    Requirement: Windows 10 or 11 
    
@@ -137,7 +137,7 @@ __________________________
    
 __________________________
 
-## Here we go Part 2
+## Here we go, Part II
 
 ### 1. Installation of nanoplot and fastqc via conda 
    
@@ -209,7 +209,7 @@ __________________________
    which fastqc
    ```
 
-   #### d. Check quality of short-read sequences using fastqc
+   #### f. Check quality of short-read sequences using fastqc
    Get the data \
    Sources: \
    ##https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/tree/main \
@@ -231,12 +231,14 @@ __________________________
    ```
    ## First create directory fastqc
    mkdir fastqc
+   ```
 
+   ```
    ## This is to run fastqc ~ 30 s
    fastqc illumina_f.fq illumina_r.fq -o fastqc
    ```
 
-   ## Check the result
+   Check the result
    First open powershell
    ```
    ## Copy folder fastqc to Downloads
@@ -257,23 +259,23 @@ __________________________
 
 __________________________
 
-## Entering the 3rd Part
+## Entering the Part III
 
 ### 1. Assembly for illumina reads using Unicycler
    
    #### a. Create conda environment called analysis
    ```
-   ## This is to creat env called analysis
+   ## This is to create env called analysis
    conda create --name analysis
    ```   
 
-   #### b. Activate analysis environment
+   #### b. Activate the "analysis" environment
    ```
    ## This is to activate the environment
    conda activate analysis
    ```
 
-   ### c. Install mamba for faster installation
+   #### c. Install mamba for faster installation
    ```
    ## This is to install mamba
    conda install mamba
@@ -319,7 +321,7 @@ __________________________
    gdown --no-check-certificate --folder https://drive.google.com/drive/u/1/folders/12mJhPOoPcDMSdQPjzAH5Pp_HTgvJRPTN
    ```
 
-   ## Check the result
+   Check the result
    First open powershell
    ```
    ## Copy folder fastqc to Downloads
@@ -392,7 +394,7 @@ __________________________
    prokka assembly2/assembly_unicycler/assembly.fasta -o prokka
    ```
 
-   Check the result
+   Check the result \
    First open powershell
    ```
    ## Copy folder fastqc to Downloads
@@ -402,8 +404,8 @@ __________________________
    
 ### 4. Visualization using IGV 
 
-   a. Install IGV from https://igv.org/doc/desktop/#DownloadPage/
-   b. Genomes --> Load Genome from file --> assembly.fasta
+   a. Install IGV from https://igv.org/doc/desktop/#DownloadPage/ \
+   b. Genomes --> Load Genome from file --> assembly.fasta \
    c. File --> Load from file --> ROKKA_xxxxxxx.gff 
 
 
