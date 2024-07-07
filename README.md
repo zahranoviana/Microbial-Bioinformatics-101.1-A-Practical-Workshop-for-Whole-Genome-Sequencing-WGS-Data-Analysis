@@ -92,42 +92,36 @@ __________________________
 ### 4. Getting familiar with the command line
 
    Check your working directory
-   
    ```
    ## This is to get the path to your working directory
    pwd
    ```
 
    Create a new folder called bioinformatics_101
-   
    ```
    ## This is to make a new folder called bioinformatics_101
    mkdir bioinformatics_101
    ```
 
    Check if bioinformatics_101 folder is succesfully created
-   
    ```
    ## This is to list information about files and folders
    ls
    ```
 
    Change working directories to bioinformatics_101
-   
    ```
    ## This is to enter folder bioinformatics_101
    cd bioinformatics_101/
    ```
 
    Try to create a file
-   
    ```
    ## This is to create a file called notes.txt
    touch notes.txt
    ```      
 
    Edit the file
-
    ```
    ## This is to edit the file called notes.txt
    vim notes.txt
@@ -147,13 +141,13 @@ __________________________
    
    #### a. Create conda environment called qc_check ~30 sec
    ```
-   ## This is to creat env called qc_check
+   ## This is to create env called qc_check
    conda create --name qc_check
    ```   
 
    #### b. Activate qc_check environment
    ```
-   ## This is to activate the qc_Check
+   ## This is to activate the qc_check
    conda activate qc_check
    ```
   
@@ -170,11 +164,11 @@ __________________________
    # which NanoPlot
    ```
 
-   #### d. Check quality of long-read sequences using 
+   #### d. Check quality of long-read sequences using NanoPlot
    Get the data \
    Sources: \
-   ## https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/tree/main \
-   # https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
+   ##https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/tree/main \
+   ##https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
 
    ```
    ## This is to create and enter a folder
@@ -185,7 +179,6 @@ __________________________
    ```
    ## This is to get the data
    # wget https://zenodo.org/record/940733/files/minion_2d.fq
-   
    ```
 
    Run NanoPlot
@@ -193,8 +186,7 @@ __________________________
    ## This is to run NanoPlot
    # NanoPlot --fastq minion_2d.fq -o NanoPlot
    ```
-   *check the result
-   
+  
    Go back to the main folder
    ```
    ## This is to go back to previous folder
@@ -217,8 +209,8 @@ __________________________
    #### d. Check quality of short-read sequences using fastqc
    Get the data \
    Sources: \
-   https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/tree/main \
-   https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
+   ##https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/tree/main \
+   ##https://training.galaxyproject.org/training-material/topics/assembly/tutorials/unicycler-assembly/tutorial.html
 
    ```
    ## This is to create and enter a folder
@@ -246,7 +238,6 @@ __________________________
    ```
    ## Copy folder fastqc to Downloads
    cp -r \\wsl$\Ubuntu\home\*username*\bioinformatics_101\illumina\fastqc \Users\*username*\Downloads
-
    ```
    
    Go back to bioinformatics_101 directory
@@ -280,7 +271,6 @@ __________________________
    ```
 
    ### c. Install mamba for faster installation
-   
    ```
    ## This is to install mamba
    conda install mamba
@@ -308,14 +298,14 @@ __________________________
    unicycler -l illumina_f.fq -2 illumina_r.fq -o assembly
    ```
 
-   Since the assembly takes too long, download the result
+   #### Since the assembly takes too long, download the result
    ```
    ## Create and change directory
    mkdir assembly2
    cd assembly2/
    ```
 
-   ## Install gdown to download files from gdrive
+   Install gdown to download files from gdrive
    ```
    ## This is to install gdown
    pip install gdown
@@ -324,6 +314,13 @@ __________________________
    ```
    ## Download assembly file with gdown
    gdown --no-check-certificate --folder https://drive.google.com/drive/u/1/folders/12mJhPOoPcDMSdQPjzAH5Pp_HTgvJRPTN
+   ```
+
+   ## Check the result
+   First open powershell
+   ```
+   ## Copy folder fastqc to Downloads
+   cp -r \\wsl$\Ubuntu\home\*username*\bioinformatics_101\illumina\assembly2\assembly_unicycler\ \Users\*username*\Downloads
    ```
 
    Go back to previous folder
@@ -340,7 +337,7 @@ __________________________
 
 ### 2. Checking the assembly result using quast
 
-   ## We need to installed quast locally ~ 1 min
+   We need to installed quast locally ~ 1 min
    ```
    ## This is to install quast locally 
     wget https://github.com/ablab/quast/releases/download/quast_5.2.0/quast-5.2.0.tar.gz
@@ -353,21 +350,12 @@ __________________________
    ./quast.py ~/bioinformatics_101/illumina/assembly2/assembly_unicycler/assembly.fasta -o quast_output1/
    ```
 
-   ## Check the result
+   Check the result
    First open powershell
    ```
    ## Copy folder fastqc to Downloads
    cp -r \\wsl$\Ubuntu\home\*username*\bioinformatics_101\quast-5.2.0\quast_output1\ \Users\*username*\Downloads
-   ```
-   
-
-   #### f. Do annotation using prokka
-   ```
-   ## This is to run prokka
-   prokka assembly/xxxxxx.fa -o prokka
-   ```
-   *check the result
-   
+   ``` 
    
 ### 3. Annotation using prokka  
 
@@ -401,18 +389,20 @@ __________________________
    prokka assembly2/assembly_unicycler/assembly.fasta -o prokka
    ```
 
-   ## Check the result
+   Check the result
    First open powershell
    ```
    ## Copy folder fastqc to Downloads
    cp -r \\wsl$\Ubuntu\home\*username*\bioinformatics_101\illumina\prokka\ \Users\*username*\Downloads
    ```
+
    
 ### 4. Visualization using IGV 
 
    a. Install IGV from https://igv.org/doc/desktop/#DownloadPage/
    b. Genomes --> Load Genome from file --> assembly.fasta
    c. File --> Load from file --> ROKKA_xxxxxxx.gff 
+
 
 
 ### 5. Visualization using web-based proksee.ca
