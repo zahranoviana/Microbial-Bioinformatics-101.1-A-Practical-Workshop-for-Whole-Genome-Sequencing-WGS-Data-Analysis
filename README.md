@@ -16,16 +16,15 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
 4. Getting Familiar with the Command Line
 
 ### Part II - Quality check of sequences
-1. Installation of nanoplot and fastqc
-2. Quality check for long-read sequences (Oxford Nanopore Technologies)
+1. Installation of nanoplot via conda and quality check for long read sequences
+2. Installation of fastqc via conda and quality check for short read sequences
 3. Quality check for short-read sequences (Illumina)
 
 ### Part III - Assembly, annotation and data visualization
 1. Assembly of illumina reads using unicycler
 2. Checking the assembly result using quast
 3. Annotation using prokka
-4. Visualization using IGV
-5. Visualization using web-based proksee.ca
+4. Visualization 
 __________________________
 ## Let's get things started
 
