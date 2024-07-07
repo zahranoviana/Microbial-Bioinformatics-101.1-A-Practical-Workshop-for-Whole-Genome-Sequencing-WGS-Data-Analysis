@@ -2,7 +2,7 @@
 
 Microbial bioinformatics merges advanced computing with microbiology, decoding genetic and functional traits of microorganisms. This workshop equips BRIN staff to leverage sequencing and analysis tools for deeper insights into microbial interactions and applications in research.  
 
-Session 1: June 27th 2024  
+Session 1: July 9th 2024  
 
 Instructor: Zahra Noviana, Rida Tiffarent, Herjuno Ari Nugroho, Riki Ruhimat, Fajar Nasrulloh, Rini Riffiani, Panji Cahya Mawarda (Tim Ad-hoc Genom Mikroba - PRMT BRIN)  
 
@@ -20,9 +20,12 @@ Participant: Staff of Research Center for Applied Microbiology BRIN
 2. Quality check for long-read sequences (Oxford Nanopore Technologies)
 3. Quality check for short-read sequences (Illumina)
 
-### Part 3 - Assembly and annotation
+### Part 3 - Assembly of illumina short-read sequences using Unicycler
 1. Assembly and annotation for long-read sequences (Oxford Nanopore Technologies)
-2. Data visualization
+2. Checking the assembly result using quast
+3. Annotation using prokka
+4. Visualization using IGV
+5. Visualization using web-based proksee.ca
 __________________________
 ## Let's get things started
 
