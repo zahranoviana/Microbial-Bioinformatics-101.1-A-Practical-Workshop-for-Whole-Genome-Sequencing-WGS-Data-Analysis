@@ -139,7 +139,7 @@ __________________________
 
 ## Here we go, Part II
 
-### 1. Installation of nanoplot and fastqc via conda 
+### 1. Installation of nanoplot via conda and quality check for long read sequences
    
    
    #### a. Create conda environment called qc_check ~30 sec
@@ -195,8 +195,11 @@ __________________________
    ## This is to go back to previous folder
    # cd ..
    ```
+
    
-   #### e. Install fastqc via conda ~ 2 min
+### 2. Installation of fastqc via conda and quality check for short read sequences
+
+   #### a. Install fastqc via conda ~ 2 min
    Install fastqc
    ```
    ## This is to install fastqc
@@ -209,7 +212,7 @@ __________________________
    which fastqc
    ```
 
-   #### f. Check quality of short-read sequences using fastqc
+   #### b. Check the quality of short-read sequences using fastqc
    Get the data \
    Sources: \
    ##https://github.com/hpc-mahameru/Bioinformatics-User-Meeting/tree/main \
@@ -238,7 +241,7 @@ __________________________
    fastqc illumina_f.fq illumina_r.fq -o fastqc
    ```
 
-   Check the result
+   #### c. Check the result
    First open powershell
    ```
    ## Copy folder fastqc to Downloads
@@ -261,7 +264,7 @@ __________________________
 
 ## Entering the Part III
 
-### 1. Assembly for illumina reads using Unicycler
+### 1. Assembly of illumina reads using Unicycler
    
    #### a. Create conda environment called analysis
    ```
@@ -321,7 +324,7 @@ __________________________
    gdown --no-check-certificate --folder https://drive.google.com/drive/u/1/folders/12mJhPOoPcDMSdQPjzAH5Pp_HTgvJRPTN
    ```
 
-   Check the result
+   #### f. Check the result
    First open powershell
    ```
    ## Copy folder fastqc to Downloads
@@ -342,6 +345,7 @@ __________________________
 
 ### 2. Checking the assembly result using quast
 
+   #### a. Quast Installation
    We need to installed quast locally ~ 1 min
    ```
    ## This is to install quast locally 
@@ -349,21 +353,25 @@ __________________________
     tar -xzf quast-5.2.0.tar.gz
     cd quast-5.2.0
    ```
-   
+
+   #### b. Run quast
    ```
    ## This is to run quast
    ./quast.py ~/bioinformatics_101/illumina/assembly2/assembly_unicycler/assembly.fasta -o quast_output1/
    ```
 
-   Check the result
+   #### c. Check the result
    First open powershell
    ```
    ## Copy folder fastqc to Downloads
    cp -r \\wsl$\Ubuntu\home\*username*\bioinformatics_101\quast-5.2.0\quast_output1\ \Users\*username*\Downloads
    ``` 
+
    
 ### 3. Annotation using prokka  
 
+
+   #### a. Activate environment
    First go to our working folder
    ```
    ## Go to destination folder
@@ -376,6 +384,7 @@ __________________________
    conda activate analysis
    ```
 
+   #### b. Prokka installation
    Install prokka
    ```
    ## This is to install prokka
@@ -388,13 +397,13 @@ __________________________
    which prokka
    ```
 
-   Run prokka
+   #### c. Run prokka
    ```
    ## This is to run prokka
    prokka assembly2/assembly_unicycler/assembly.fasta -o prokka
    ```
 
-   Check the result \
+   #### d. Check the result 
    First open powershell
    ```
    ## Copy folder fastqc to Downloads
@@ -402,15 +411,15 @@ __________________________
    ```
 
    
-### 4. Visualization using IGV 
+### 4. Visualization
+
+#### a. Employing IGV 
 
    a. Install IGV from https://igv.org/doc/desktop/#DownloadPage/ \
    b. Genomes --> Load Genome from file --> assembly.fasta \
    c. File --> Load from file --> ROKKA_xxxxxxx.gff 
 
-
-
-### 5. Visualization using web-based proksee.ca
+#### b. Web-based proksee.ca
 Go to https://proksee.ca/ and upload assembly and anotation files for genome visualization
 
 
