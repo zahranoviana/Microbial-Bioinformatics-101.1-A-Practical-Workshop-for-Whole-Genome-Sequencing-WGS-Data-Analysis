@@ -261,7 +261,7 @@ __________________________
 
 __________________________
 
-## Entering the Part III
+## Entering Part III
 
 ### 1. Assembly of illumina reads using Unicycler
    
