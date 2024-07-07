@@ -241,8 +241,7 @@ __________________________
    fastqc illumina_f.fq illumina_r.fq -o fastqc
    ```
 
-   Check the result
-
+   ## Check the result
    First open powershell
    ```
    ## Copy folder fastqc to Downloads
@@ -266,7 +265,7 @@ __________________________
 
 ## Entering the 3rd Part
 
-### 1. Assembly and annotation for long-read sequences (Oxford Nanopore Technologies) using Unicycler
+### 1. Assembly for illumina reads using Unicycler
    
    #### a. Create conda environment called analysis
    ```
@@ -309,19 +308,57 @@ __________________________
    unicycler -l illumina_f.fq -2 illumina_r.fq -o assembly
    ```
 
-
    Since the assembly takes too long, download the result
    ```
-   ## wget
+   ## Create and change directory
+   mkdir assembly2
+   cd assembly2/
    ```
 
+   ## Install gdown to download files from gdrive
+   ```
+   ## This is to install gdown
+   pip install gdown
+   ```
+   
+   ```
+   ## Download assembly file with gdown
+   gdown --no-check-certificate --folder https://drive.google.com/drive/u/1/folders/12mJhPOoPcDMSdQPjzAH5Pp_HTgvJRPTN
+   ```
 
-   #### f. Check the assembly result using quast
+   Go back to previous folder
+   ```
+   ## Go back
+   cd ..   
+   ```
+
+   Deactivate the environment
+   ```
+   ## Deactivate current environment
+   conda deactivate   
+   ```
+
+### 2. Checking the assembly result using quast
+
+   ## We need to installed quast locally ~ 1 min
+   ```
+   ## This is to install quast locally 
+    wget https://github.com/ablab/quast/releases/download/quast_5.2.0/quast-5.2.0.tar.gz
+    tar -xzf quast-5.2.0.tar.gz
+    cd quast-5.2.0
+   ```
+   
    ```
    ## This is to run quast
-   quast assembly/ -o quast
+   ./quast.py ~/bioinformatics_101/illumina/assembly2/assembly_unicycler/assembly.fasta -o quast_output1/
    ```
-   *check the result
+
+   ## Check the result
+   First open powershell
+   ```
+   ## Copy folder fastqc to Downloads
+   cp -r \\wsl$\Ubuntu\home\*username*\bioinformatics_101\quast-5.2.0\quast_output1\ \Users\*username*\Downloads
+   ```
    
 
    #### f. Do annotation using prokka
@@ -332,28 +369,53 @@ __________________________
    *check the result
    
    
-   
-   
-   
+### 3. Annotation using prokka  
 
-
-
-   
+   First go to our working folder
    ```
-   ## Go to ONT folder
-   cd ONT/   
-   ```
-   
-   ```
-   ## This is to run assembly using unicycler
-   unicycler -l minion_2d.fq -o assembly
+   ## Go to destination folder
+   cd ~/bioinformatics_101/illumina/   
    ```
 
+   Activate environment
+   ```
+   ## Activate back the analysis environment
+   conda activate analysis
+   ```
 
+   Install prokka
+   ```
+   ## This is to install prokka
+   conda install -c bioconda prokka
+   ```
+
+   Check the installation
+   ```
+   ## This is to check prokka installation
+   which prokka
+   ```
+
+   Run prokka
+   ```
+   ## This is to run prokka
+   prokka assembly2/assembly_unicycler/assembly.fasta -o prokka
+   ```
+
+   ## Check the result
+   First open powershell
+   ```
+   ## Copy folder fastqc to Downloads
+   cp -r \\wsl$\Ubuntu\home\*username*\bioinformatics_101\illumina\prokka\ \Users\*username*\Downloads
+   ```
    
+### 4. Visualization using IGV 
+
+   a. Install IGV from https://igv.org/doc/desktop/#DownloadPage/
+   b. Genomes --> Load Genome from file --> assembly.fasta
+   c. File --> Load from file --> ROKKA_xxxxxxx.gff 
 
 
-### 2. Data visualization
+### 5. Visualization using web-based proksee.ca
 Go to https://proksee.ca/ and upload assembly and anotation files for genome visualization
 
 
