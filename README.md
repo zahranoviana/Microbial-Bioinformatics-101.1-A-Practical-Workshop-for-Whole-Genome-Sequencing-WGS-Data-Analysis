@@ -416,7 +416,7 @@ __________________________
 
    a. Install IGV from https://igv.org/doc/desktop/#DownloadPage/ \
    b. Genomes --> Load Genome from file --> assembly.fasta \
-   c. File --> Load from file --> ROKKA_xxxxxxx.gff 
+   c. File --> Load from file --> PROKKA_xxxxxxx.gff 
 
 #### b. Web-based proksee.ca
 Go to https://proksee.ca/ and upload assembly and anotation files for genome visualization
