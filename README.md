@@ -4,7 +4,7 @@ Microbial bioinformatics merges advanced computing with microbiology, decoding g
 
 Session 1: July 9th 2024  
 
-Instructor: Zahra Noviana, Rida Tiffarent, Herjuno Ari Nugroho, Riki Ruhimat, Fajar Nasrulloh, Rini Riffiani, Panji Cahya Mawarda (Tim Ad-hoc Genom Mikroba - PRMT BRIN)  
+Instructor: Zahra Noviana, Panji Cahya Mawarda, Riki Ruhimat, Herjuno Ari Nugroho, Rini Riffiani, Fajar Nasrulloh, Rida Tiffarent (Tim Ad-hoc Genom Mikroba - PRMT BRIN)  
 
 Participant: Staff of Research Center for Applied Microbiology BRIN
 
