@@ -82,7 +82,7 @@ __________________________
    Execute installation
    ```
    ## This is to install Miniconda
-   #bash Miniconda3-latest-Linux-x86_64.sh
+   bash Miniconda3-latest-Linux-x86_64.sh
    ```
    
    Test if it is installed correctly
