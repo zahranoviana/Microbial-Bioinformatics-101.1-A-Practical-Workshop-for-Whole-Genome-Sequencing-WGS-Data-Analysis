@@ -76,13 +76,13 @@ __________________________
    Download Miniconda installer
    ```
    ## This is to download Miniconda installer
-   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /opt/miniconda-installer.sh
+   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh 
    ```
    
    Execute installation
    ```
    ## This is to install Miniconda
-   bash /opt/miniconda-installer.sh
+   #bash Miniconda3-latest-Linux-x86_64.sh
    ```
    
    Test if it is installed correctly
